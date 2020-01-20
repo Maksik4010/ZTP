@@ -13,16 +13,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace WpfApp4
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    
     public partial class MainWindow : Window
     {
+        public int selectedOption;
+        public int selectedLevel;
         public MainWindow()
         {
             InitializeComponent();
+            
+            
             Imagines.Source = getImage("249");
         }
 
@@ -37,50 +43,49 @@ namespace WpfApp4
 
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
-            if(EasyCheck.IsChecked == true)
+            if (LearnCheck.IsChecked == true)
             {
-                if(LearnCheck.IsChecked == true)
+                selectedOption = 0;
+                if(EasyCheck.IsChecked == true)
                 {
-
-                } 
-                else if(TestCheck.IsChecked == true)
-                {
-
+                    selectedLevel = 1;
                 }
-            } 
-            else if(MediumCheck.IsChecked == true)
-            {
-                if (LearnCheck.IsChecked == true)
+                else if (MediumCheck.IsChecked == true)
                 {
-
+                    selectedLevel = 2;
                 }
-                else if (TestCheck.IsChecked == true)
+                else if(HardCheck.IsChecked == true)
                 {
-
+                    selectedLevel = 3;
+                }
+                else if(ExpertCheck.IsChecked == true)
+                {
+                    selectedLevel = 4;
                 }
             }
-            else if(HardCheck.IsChecked == true)
+            else if(TestCheck.IsChecked == true)
             {
-                if (LearnCheck.IsChecked == true)
+                selectedOption = 1;
+                if (EasyCheck.IsChecked == true)
                 {
-
+                    selectedLevel = 1;
                 }
-                else if (TestCheck.IsChecked == true)
+                else if (MediumCheck.IsChecked == true)
                 {
-
+                    selectedLevel = 2;
+                }
+                else if (HardCheck.IsChecked == true)
+                {
+                    selectedLevel = 3;
+                }
+                else if (ExpertCheck.IsChecked == true)
+                {
+                    selectedLevel = 4;
                 }
             }
-            else if(ExpertCheck.IsChecked == true)
-            {
-                if (LearnCheck.IsChecked == true)
-                {
-
-                }
-                else if (TestCheck.IsChecked == true)
-                {
-
-                }
-            }
+            Game game = new Game();
+            this.Visibility = Visibility.Hidden;
+            game.Show();
         }
 
         private void QuitButton_Click(object sender, RoutedEventArgs e)
@@ -88,6 +93,8 @@ namespace WpfApp4
             Environment.Exit(0);
         }
 
-        
+        private void Baza_button_Click(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
