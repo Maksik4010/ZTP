@@ -27,9 +27,6 @@ namespace WpfApp4
         public MainWindow()
         {
             InitializeComponent();
-            
-            
-            Imagines.Source = getImage("249");
         }
 
         private BitmapImage getImage(string img)
@@ -43,46 +40,6 @@ namespace WpfApp4
 
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
-            if (LearnCheck.IsChecked == true)
-            {
-                selectedOption = 0;
-                if(EasyCheck.IsChecked == true)
-                {
-                    selectedLevel = 1;
-                }
-                else if (MediumCheck.IsChecked == true)
-                {
-                    selectedLevel = 2;
-                }
-                else if(HardCheck.IsChecked == true)
-                {
-                    selectedLevel = 3;
-                }
-                else if(ExpertCheck.IsChecked == true)
-                {
-                    selectedLevel = 4;
-                }
-            }
-            else if(TestCheck.IsChecked == true)
-            {
-                selectedOption = 1;
-                if (EasyCheck.IsChecked == true)
-                {
-                    selectedLevel = 1;
-                }
-                else if (MediumCheck.IsChecked == true)
-                {
-                    selectedLevel = 2;
-                }
-                else if (HardCheck.IsChecked == true)
-                {
-                    selectedLevel = 3;
-                }
-                else if (ExpertCheck.IsChecked == true)
-                {
-                    selectedLevel = 4;
-                }
-            }
             Game game = new Game();
             this.Visibility = Visibility.Hidden;
             game.Show();

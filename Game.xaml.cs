@@ -17,10 +17,27 @@ namespace WpfApp4
     /// </summary>
     public partial class Game : Window
     {
+
         public Game()
         {
             InitializeComponent();
             
+            
+        }
+
+        private void Baza_button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void QuitButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -7,24 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="1200">
     <Grid Background="#FF006613">
-        <TextBlock HorizontalAlignment="Left" Margin="186,10,0,0" Text="Englearn - program do nauki języka angielskiego" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="790" FontWeight="Bold" FontSize="24" TextAlignment="Center" Foreground="White"/>
-        <TextBlock HorizontalAlignment="Left" Margin="100,88,0,0" Text="Wybierz poziom:" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="171" Foreground="White" FontSize="20" FontWeight="Normal"/>
-        <CheckBox x:Name="EasyCheck" Content="Łatwy" HorizontalAlignment="Left" Margin="100,126,0,0" VerticalAlignment="Top" Height="33" Width="127" Foreground="White" FontSize="18" />
-        <CheckBox x:Name="MediumCheck" Content="Średni" HorizontalAlignment="Left" Margin="100,159,0,0" VerticalAlignment="Top" Height="22" Width="127" Foreground="White" FontSize="18" />
-        <CheckBox x:Name="HardCheck" Content="Trudny" HorizontalAlignment="Left" Margin="100,195,0,0" VerticalAlignment="Top" Height="22" Width="127" Foreground="White" FontSize="18" />
-        <CheckBox x:Name="ExpertCheck" Content="Ekspert" HorizontalAlignment="Left" Margin="100,232,0,0" VerticalAlignment="Top" Height="22" Width="127" Foreground="White" FontSize="18" />
-        <TextBlock HorizontalAlignment="Left" Margin="340,88,0,0" Text="Wybierz tryb:" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="171" Foreground="White" FontSize="20" FontWeight="Normal"/>
-        <CheckBox x:Name="LearnCheck" Content="Tryb Nauki" HorizontalAlignment="Left" Margin="340,137,0,0" VerticalAlignment="Top" Height="33" Width="127" Foreground="White" FontSize="18" />
-        <CheckBox x:Name="TestCheck" Content="Tryb Testu" HorizontalAlignment="Left" Margin="340,184,0,0" VerticalAlignment="Top" Height="33" Width="127" Foreground="White" FontSize="18" />
-        <Image x:Name="Imagines" HorizontalAlignment="Left" Height="380" Margin="620,154,0,0" VerticalAlignment="Top" Width="528" Source="/images/249.png"/>
+        
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Text="Englearn - program do nauki języka angielskiego" TextWrapping="Wrap" VerticalAlignment="Top" Height="242" Width="1180" FontWeight="Bold" FontSize="72" TextAlignment="Center" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-66,290,0,0" Text="Aby Rozpocząć zabawe lub naukę wciśnij dalej" TextWrapping="Wrap" VerticalAlignment="Top" Height="110" Width="692" FontWeight="Bold" FontSize="24" TextAlignment="Center" Foreground="White"/>
+        <Image x:Name="Imagines" HorizontalAlignment="Left" Height="318" Margin="626,236,0,0" VerticalAlignment="Top" Width="528" Source="/images/249.png"/>
         <Button x:Name="NextButton" Content="Dalej" HorizontalAlignment="Left" Margin="80,376,0,0" VerticalAlignment="Top" Height="47" Width="168" Background="#FF00C5FF" FontSize="18" Click="NextButton_Click"/>
         <Button x:Name="QuitButton" Content="Wyjście" HorizontalAlignment="Left" Margin="299,376,0,0" VerticalAlignment="Top" Height="47" Width="168" Background="#FF00C5FF" FontSize="20" Click="QuitButton_Click"/>
-        <Button x:Name="Baza_button" Content="Przejdź do Bazy Danych" HorizontalAlignment="Left" Margin="143,460,0,0" VerticalAlignment="Top" Height="42" Width="240" Background="#FF00C5FF" Foreground="Black" FontSize="20" Click="Baza_button_Click"/>
-        <ComboBox HorizontalAlignment="Left" Margin="954,46,0,0" VerticalAlignment="Top" Width="190" Height="47" BorderBrush="#FF992121" FontSize="20" Background="#FF00C0FF" Foreground="#FF8F2121" OpacityMask="#FFAE0B0B">
-            <ComboBoxItem>Angielski</ComboBoxItem>
-            <ComboBoxItem>Polski</ComboBoxItem>
-
-        </ComboBox>
+        <Button x:Name="Bazabutton" Content="Przejdź do Bazy Danych" HorizontalAlignment="Left" Margin="143,460,0,0" VerticalAlignment="Top" Height="42" Width="240" Background="#FF00C5FF" Foreground="Black" FontSize="20" Click="Baza_button_Click"/>
+        
 
     </Grid>
 </Window>
