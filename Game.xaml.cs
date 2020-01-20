@@ -17,6 +17,7 @@ namespace WpfApp4
     /// </summary>
     public partial class Game : Window
     {
+        int level = 0;
 
         public Game()
         {
@@ -38,6 +39,16 @@ namespace WpfApp4
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        void setLevel(int level)
+        {
+            this.level = level;
+        }
+
+        int getLevel()
+        {
+            return this.level;
         }
     }
 }
