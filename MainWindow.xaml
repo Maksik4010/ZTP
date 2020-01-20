@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="600" Width="1200">
+    <Grid Background="#FF006613">
+        <TextBlock HorizontalAlignment="Left" Margin="186,10,0,0" Text="Englearn - program do nauki języka angielskiego" TextWrapping="Wrap" VerticalAlignment="Top" Height="73" Width="790" FontWeight="Bold" FontSize="24" TextAlignment="Center" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,88,0,0" Text="Wybierz poziom:" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="171" Foreground="White" FontSize="20" FontWeight="Normal"/>
+        <CheckBox x:Name="EasyCheck" Content="Łatwy" HorizontalAlignment="Left" Margin="100,126,0,0" VerticalAlignment="Top" Height="33" Width="127" Foreground="White" FontSize="18" Checked="EasyCheck_Checked"/>
+        <CheckBox x:Name="MediumCheck" Content="Średni" HorizontalAlignment="Left" Margin="100,159,0,0" VerticalAlignment="Top" Height="22" Width="127" Foreground="White" FontSize="18" Checked="MediumCheck_Checked"/>
+        <CheckBox x:Name="HardCheck" Content="Trudny" HorizontalAlignment="Left" Margin="100,195,0,0" VerticalAlignment="Top" Height="22" Width="127" Foreground="White" FontSize="18" Checked="HardCheck_Checked"/>
+        <CheckBox x:Name="ExpertCheck" Content="Ekspert" HorizontalAlignment="Left" Margin="100,232,0,0" VerticalAlignment="Top" Height="22" Width="127" Foreground="White" FontSize="18" Checked="ExpertCheck_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="340,88,0,0" Text="Wybierz tryb:" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="171" Foreground="White" FontSize="20" FontWeight="Normal"/>
+        <CheckBox x:Name="LearnCheck" Content="Tryb Nauki" HorizontalAlignment="Left" Margin="340,137,0,0" VerticalAlignment="Top" Height="33" Width="127" Foreground="White" FontSize="18" Checked="LearnCheck_Checked"/>
+        <CheckBox x:Name="TestCheck" Content="Tryb Testu" HorizontalAlignment="Left" Margin="340,184,0,0" VerticalAlignment="Top" Height="33" Width="127" Foreground="White" FontSize="18" Checked="TestCheck_Checked"/>
+        <Image x:Name="Imagines" HorizontalAlignment="Left" Height="380" Margin="600,105,0,0" VerticalAlignment="Top" Width="528" Source="249.png"/>
+        <Button x:Name="NextButton" Content="Dalej" HorizontalAlignment="Left" Margin="80,376,0,0" VerticalAlignment="Top" Height="47" Width="168" Background="#FF00C5FF" FontSize="18" Click="NextButton_Click"/>
+        <Button x:Name="QuitButton" Content="Wyjście" HorizontalAlignment="Left" Margin="299,376,0,0" VerticalAlignment="Top" Height="47" Width="168" Background="#FFFF1700" FontSize="20" Click="QuitButton_Click"/>
 
     </Grid>
 </Window>

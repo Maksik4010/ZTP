@@ -23,6 +23,71 @@ namespace WpfApp4
         public MainWindow()
         {
             InitializeComponent();
+            Imagines.Source = getImage("249");
         }
+
+        private BitmapImage getImage(string img)
+        {
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.UriSource = new Uri("images/" + img + ".png", UriKind.Relative);
+            image.EndInit();
+            return image;
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(EasyCheck.IsChecked == true)
+            {
+                if(LearnCheck.IsChecked == true)
+                {
+
+                } 
+                else if(TestCheck.IsChecked == true)
+                {
+
+                }
+            } 
+            else if(MediumCheck.IsChecked == true)
+            {
+                if (LearnCheck.IsChecked == true)
+                {
+
+                }
+                else if (TestCheck.IsChecked == true)
+                {
+
+                }
+            }
+            else if(HardCheck.IsChecked == true)
+            {
+                if (LearnCheck.IsChecked == true)
+                {
+
+                }
+                else if (TestCheck.IsChecked == true)
+                {
+
+                }
+            }
+            else if(ExpertCheck.IsChecked == true)
+            {
+                if (LearnCheck.IsChecked == true)
+                {
+
+                }
+                else if (TestCheck.IsChecked == true)
+                {
+
+                }
+            }
+        }
+
+        private void QuitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        
     }
 }
