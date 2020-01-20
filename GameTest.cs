@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WpfApp4
 {
-    public class GameLearning : Game
+    class GameTest : Game
     {
     }
 }
